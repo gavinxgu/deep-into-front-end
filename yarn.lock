@@ -1827,6 +1827,37 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@react/20200914.zustand.jotai.recoil@workspace:react/20200914.zustand.jotai.recoil":
+  version: 0.0.0-use.local
+  resolution: "@react/20200914.zustand.jotai.recoil@workspace:react/20200914.zustand.jotai.recoil"
+  dependencies:
+    "@types/react": latest
+    "@types/react-dom": latest
+    jotai: ^0.5.0
+    react: latest
+    react-dom: latest
+    react-scripts: latest
+    react-use: latest
+    recoil: ^0.0.10
+    typescript: latest
+    zustand: ^3.1.2
+  languageName: unknown
+  linkType: soft
+
+"@react/cra-template-jiandan@workspace:react/cra-template-jiandan":
+  version: 0.0.0-use.local
+  resolution: "@react/cra-template-jiandan@workspace:react/cra-template-jiandan"
+  dependencies:
+    "@types/react": latest
+    "@types/react-dom": latest
+    react: latest
+    react-dom: latest
+    react-scripts: latest
+    react-use: latest
+    typescript: latest
+  languageName: unknown
+  linkType: soft
+
 "@svgr/babel-plugin-add-jsx-attribute@npm:^4.2.0":
   version: 4.2.0
   resolution: "@svgr/babel-plugin-add-jsx-attribute@npm:4.2.0"
@@ -8164,6 +8195,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"jotai@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "jotai@npm:0.5.0"
+  dependencies:
+    use-context-selector: ^1.1.2
+  peerDependencies:
+    react: ">=16.8"
+  checksum: 023d69ecef0e7768fc21c4ac63c19f421c6d570c6909ca0a5b6efc6fc9584080e862d5f7251b5542cbf8068721706214a2a3589b5da2ea0c9500e56160f6a434
+  languageName: node
+  linkType: hard
+
 "js-cookie@npm:^2.2.1":
   version: 2.2.1
   resolution: "js-cookie@npm:2.2.1"
@@ -11591,6 +11633,16 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"recoil@npm:^0.0.10":
+  version: 0.0.10
+  resolution: "recoil@npm:0.0.10"
+  peerDependencies:
+    react: ^16.13.1
+    react-dom: ^16.13.1
+  checksum: 204948109a1d12003bca3446ac5bc009a66087faed87bf1a51893b983648377f334f205f955e56041a86f48006001e1fb88bdbf8d0293f77746fed055cbcf89d
+  languageName: node
+  linkType: hard
+
 "recursive-readdir@npm:2.2.2":
   version: 2.2.2
   resolution: "recursive-readdir@npm:2.2.2"
@@ -13716,6 +13768,15 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
+"use-context-selector@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "use-context-selector@npm:1.1.2"
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: dd25e3dfa5348ae9b07b75de582c4d793a8defbfddaa7816c283351452a98c6ba7383b925f2d4f10068c8815c1d90cb8b6566277455c2646c2ef3c8faf522400
+  languageName: node
+  linkType: hard
+
 "use@npm:^3.1.0":
   version: 3.1.1
   resolution: "use@npm:3.1.1"
@@ -14470,5 +14531,14 @@ resolve@1.1.7:
     y18n: ^4.0.0
     yargs-parser: ^13.1.2
   checksum: 92c612cd14a9217d7421ae4f42bc7c460472633bfc2e45f7f86cd614a61a845670d3bac7c2228c39df7fcecce0b8c12b2af65c785b1f757de974dcf84b5074f9
+  languageName: node
+  linkType: hard
+
+"zustand@npm:^3.1.2":
+  version: 3.1.2
+  resolution: "zustand@npm:3.1.2"
+  peerDependencies:
+    react: ">=16.8"
+  checksum: 4f8351d6070d2f97d0ebd31c003cae98bb3b5de62cbe5b117cfd59714a1761d1f706546e8c013976dd9b86fab84797df25dac4eb0e169588be7c2a2d35a79f61
   languageName: node
   linkType: hard

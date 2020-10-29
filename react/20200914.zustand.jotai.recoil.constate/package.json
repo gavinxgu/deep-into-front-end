@@ -1,0 +1,38 @@
+{
+  "name": "@react/20200914.zustand.jotai.recoil.constate",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "dependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "jotai": "^0.5.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-scripts": "latest",
+    "react-use": "latest",
+    "recoil": "^0.0.10",
+    "typescript": "latest",
+    "zustand": "^3.1.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
