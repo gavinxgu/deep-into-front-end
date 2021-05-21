@@ -7,12 +7,12 @@ interface Theme {
 
 const darkTheme = {
   backgroundColor: "#222",
-  textColor: "#eee",
+  textColor: "#eee"
 };
 
 const lightTheme = {
   backgroundColor: "#eee",
-  textColor: "#222",
+  textColor: "#222"
 };
 
 // @ts-ignore
@@ -26,7 +26,7 @@ const Box: React.FC = React.memo(function Box() {
         width: 100,
         height: 100,
         backgroundColor: theme.backgroundColor,
-        color: theme.textColor,
+        color: theme.textColor
       }}
     >
       {"I am a box!"}

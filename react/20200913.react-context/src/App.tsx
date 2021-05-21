@@ -8,12 +8,8 @@ function useForceUpdate() {
   return forceUpdate;
 }
 
-const refContext = React.createContext<{ a: number; b: { c: number } }>(
-  [] as any,
-);
-const stateContext = React.createContext<{ a: number; b: { c: number } }>(
-  [] as any,
-);
+const refContext = React.createContext<{ a: number; b: { c: number } }>([] as any);
+const stateContext = React.createContext<{ a: number; b: { c: number } }>([] as any);
 
 const Middle: React.FC = React.memo(function Middle({ children }) {
   useLogger("Middle");

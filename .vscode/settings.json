@@ -1,7 +1,0 @@
-{
-  "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "typescript.tsdk": "/Users/bytedance/development/GitHub/deep-into-front-end/node_modules/typescript/lib",
-  "eslint.alwaysShowStatus": true,
-  "eslint.packageManager": "yarn"
-}

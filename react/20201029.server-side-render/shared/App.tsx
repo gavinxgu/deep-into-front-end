@@ -13,20 +13,19 @@ const counterConsoleLog = function (
     props?: any;
     state?: any;
     innerText?: any;
-  } = {},
+  } = {}
 ) {
   console.log(count, name);
   console.table(
     Object.entries(tableData).reduce((pre, [k, v]) => {
       pre[k] = typeof v === "object" ? JSON.stringify(v) : v ?? "unset";
       return pre;
-    }, {} as any),
+    }, {} as any)
   );
   count += 1;
 };
 
-const useIsomorphicLayoutEffect =
-  typeof window !== "undefined" ? useLayoutEffect : useEffect;
+const useIsomorphicLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
 export const AppFC = function (props) {
   const [count, setCount] = useState(0);
@@ -35,13 +34,13 @@ export const AppFC = function (props) {
     counterConsoleLog("AppFC useEffect", {
       props,
       state: { count },
-      innerText: ref.current.innerText,
+      innerText: ref.current.innerText
     });
     return () => {
       counterConsoleLog("AppFC useEffect cleanup", {
         props,
         state: { count },
-        innerText: ref.current.innerText,
+        innerText: ref.current.innerText
       });
     };
   }, [count]);
@@ -49,13 +48,13 @@ export const AppFC = function (props) {
     counterConsoleLog("AppFC useLayoutEffect", {
       props,
       state: { count },
-      innerText: ref.current.innerText,
+      innerText: ref.current.innerText
     });
     return () => {
       counterConsoleLog("AppFC useLayoutEffect cleanup", {
         props,
         state: { count },
-        innerText: ref.current.innerText,
+        innerText: ref.current.innerText
       });
     };
   });
@@ -88,7 +87,7 @@ export class AppCC extends React.Component<
     this.componentDidMount = () => {
       counterConsoleLog("AppCC componentDidMount", {
         currentProps: this.props,
-        currentState: this.state,
+        currentState: this.state
       });
     };
 
@@ -97,7 +96,7 @@ export class AppCC extends React.Component<
         currentProps: this.props,
         currentState: this.state,
         nextProps,
-        nextState,
+        nextState
       });
       return true;
     };
@@ -107,7 +106,7 @@ export class AppCC extends React.Component<
         prevProps,
         prevState,
         currentProps: this.props,
-        currentState: this.state,
+        currentState: this.state
       });
     };
 
@@ -116,26 +115,26 @@ export class AppCC extends React.Component<
         prevProps,
         prevState,
         currentProps: this.props,
-        currentState: this.state,
+        currentState: this.state
       });
     };
 
     this.componentWillUnmount = () => {
       counterConsoleLog("AppCC componentWillUnmount", {
         currentProps: this.props,
-        currentState: this.state,
+        currentState: this.state
       });
     };
 
     this.state = {
-      count: 0,
+      count: 0
     };
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
     counterConsoleLog("AppCC getDerivedStateFromProps", {
       nextProps,
-      prevState,
+      prevState
     });
     return null;
   }
@@ -143,7 +142,7 @@ export class AppCC extends React.Component<
   render() {
     counterConsoleLog("AppCC render", {
       currentProps: this.props,
-      currentState: this.state,
+      currentState: this.state
     });
     return (
       <div>
@@ -152,7 +151,7 @@ export class AppCC extends React.Component<
           <button
             onClick={() => {
               this.setState((state) => ({
-                count: state.count + 1,
+                count: state.count + 1
               }));
             }}
           >

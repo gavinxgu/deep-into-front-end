@@ -1,15 +1,12 @@
 import React from "react";
-import {
-  createContext,
-  useContextSelector,
-} from "@fluentui/react-context-selector";
+import { createContext, useContextSelector } from "@fluentui/react-context-selector";
 import { useLogger } from "react-use";
 
 const context = createContext({
   a: 0,
   b: {
-    c: 0,
-  },
+    c: 0
+  }
 });
 
 const InnerA = React.memo(function InnerA() {
@@ -49,8 +46,8 @@ export const UseContextSelector = function UseContextSelector() {
   const [state, setState] = React.useState({
     a: 0,
     b: {
-      c: 0,
-    },
+      c: 0
+    }
   });
 
   return (
@@ -72,8 +69,8 @@ export const UseContextSelector = function UseContextSelector() {
                 ...s,
                 b: {
                   ...s.b,
-                  c: s.b.c + 1,
-                },
+                  c: s.b.c + 1
+                }
               };
             });
           }}

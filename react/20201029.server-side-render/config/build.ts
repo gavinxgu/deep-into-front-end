@@ -1,10 +1,5 @@
 import { join } from "path";
-import {
-  InputOptions,
-  OutputOptions,
-  rollup,
-  watch as rollupWatch,
-} from "rollup";
+import { InputOptions, OutputOptions, rollup, watch as rollupWatch } from "rollup";
 import typescript from "@rollup/plugin-typescript";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
@@ -13,7 +8,7 @@ import replace from "@rollup/plugin-replace";
 const isWatchMode = process.argv.includes("-w");
 
 async function build({
-  watch = false,
+  watch = false
 }: {
   watch?: boolean;
 } = {}) {
@@ -22,28 +17,28 @@ async function build({
     plugins: [
       replace({
         "process.env.NODE_ENV": JSON.stringify("production"),
-        preventAssignment: true,
+        preventAssignment: true
       }),
       nodeResolve({
-        browser: true,
+        browser: true
       }),
       commonjs(),
       typescript({
-        tsconfig: join(__dirname, "../tsconfig.json"),
-      }),
-    ],
+        tsconfig: join(__dirname, "../tsconfig.json")
+      })
+    ]
   };
 
   const outputOptions: OutputOptions = {
     file: join(__dirname, "../dist/client/index.js"),
     format: "umd",
-    sourcemap: "inline",
+    sourcemap: "inline"
   };
 
   if (watch) {
     const watcher = rollupWatch({
       ...inputOptions,
-      output: [outputOptions],
+      output: [outputOptions]
     });
     watcher.on("event", (event) => {
       console.log(event);
