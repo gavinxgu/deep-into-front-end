@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@fluentui/react-context-selector': ^0.51.0
+  '@fluentui/react-context-selector': ~0.53.4
   '@rollup/plugin-commonjs': ^16.0.0
   '@rollup/plugin-node-resolve': ^10.0.0
   '@rollup/plugin-replace': ^2.3.4
@@ -10,6 +10,7 @@ specifiers:
   '@rush-temp/20201029.server-side-render': file:./projects/20201029.server-side-render.tgz
   '@rush-temp/cra-template-jiandan': file:./projects/cra-template-jiandan.tgz
   '@types/express': ^4.17.8
+  '@types/react': ~17.0.6
   express: ^4.17.1
   nodemon: ^2.0.6
   react-scripts: latest
@@ -20,7 +21,7 @@ specifiers:
   web-vitals: latest
 
 dependencies:
-  '@fluentui/react-context-selector': 0.51.7
+  '@fluentui/react-context-selector': 0.53.4_@types+react@17.0.6
   '@rollup/plugin-commonjs': 16.0.0_rollup@2.48.0
   '@rollup/plugin-node-resolve': 10.0.0_rollup@2.48.0
   '@rollup/plugin-replace': 2.4.2_rollup@2.48.0
@@ -29,6 +30,7 @@ dependencies:
   '@rush-temp/20201029.server-side-render': file:projects/20201029.server-side-render.tgz
   '@rush-temp/cra-template-jiandan': file:projects/cra-template-jiandan.tgz_ts-node@9.1.1
   '@types/express': 4.17.11
+  '@types/react': 17.0.6
   express: 4.17.1
   nodemon: 2.0.7
   react-scripts: 4.0.3_ts-node@9.1.1
@@ -79,7 +81,7 @@ packages:
       gensync: 1.0.0-beta.2
       json5: 2.2.0
       lodash: 4.17.21
-      resolve: 1.18.1
+      resolve: 1.20.0
       semver: 5.7.1
       source-map: 0.5.7
     transitivePeerDependencies:
@@ -1177,16 +1179,16 @@ packages:
       '@babel/helper-plugin-utils': 7.13.0
       '@babel/helper-validator-option': 7.12.17
       '@babel/plugin-proposal-async-generator-functions': 7.14.2_@babel+core@7.12.3
-      '@babel/plugin-proposal-class-properties': 7.12.1_@babel+core@7.12.3
+      '@babel/plugin-proposal-class-properties': 7.13.0_@babel+core@7.12.3
       '@babel/plugin-proposal-dynamic-import': 7.14.2_@babel+core@7.12.3
       '@babel/plugin-proposal-export-namespace-from': 7.14.2_@babel+core@7.12.3
       '@babel/plugin-proposal-json-strings': 7.14.2_@babel+core@7.12.3
       '@babel/plugin-proposal-logical-assignment-operators': 7.14.2_@babel+core@7.12.3
-      '@babel/plugin-proposal-nullish-coalescing-operator': 7.12.1_@babel+core@7.12.3
-      '@babel/plugin-proposal-numeric-separator': 7.12.1_@babel+core@7.12.3
+      '@babel/plugin-proposal-nullish-coalescing-operator': 7.14.2_@babel+core@7.12.3
+      '@babel/plugin-proposal-numeric-separator': 7.14.2_@babel+core@7.12.3
       '@babel/plugin-proposal-object-rest-spread': 7.14.2_@babel+core@7.12.3
       '@babel/plugin-proposal-optional-catch-binding': 7.14.2_@babel+core@7.12.3
-      '@babel/plugin-proposal-optional-chaining': 7.12.1_@babel+core@7.12.3
+      '@babel/plugin-proposal-optional-chaining': 7.14.2_@babel+core@7.12.3
       '@babel/plugin-proposal-private-methods': 7.13.0_@babel+core@7.12.3
       '@babel/plugin-proposal-unicode-property-regex': 7.12.13_@babel+core@7.12.3
       '@babel/plugin-syntax-async-generators': 7.8.4_@babel+core@7.12.3
@@ -1344,7 +1346,7 @@ packages:
     dependencies:
       '@babel/core': 7.12.3
       '@babel/helper-plugin-utils': 7.13.0
-      '@babel/plugin-transform-react-display-name': 7.12.1_@babel+core@7.12.3
+      '@babel/plugin-transform-react-display-name': 7.14.2_@babel+core@7.12.3
       '@babel/plugin-transform-react-jsx': 7.14.3_@babel+core@7.12.3
       '@babel/plugin-transform-react-jsx-development': 7.12.17_@babel+core@7.12.3
       '@babel/plugin-transform-react-jsx-self': 7.12.13_@babel+core@7.12.3
@@ -1466,21 +1468,35 @@ packages:
       - supports-color
     dev: false
 
-  /@fluentui/react-context-selector/0.51.7:
-    resolution: {integrity: sha512-WLadFGSg9RHjlKGFK2WCV7eqKwZYOEOr6WHPmCTE8fBjDUbabsHU4U9J4OePPCIq/hSr0/8EfNPIjHqzXwofrg==}
+  /@fluentui/react-context-selector/0.53.4_@types+react@17.0.6:
+    resolution: {integrity: sha512-gTZsDlwd256Vbk39HIfay1p1D6buAFecdE/tH5DXEJX3oobiGcCQ0f2/9UedX8kPLLsQQUWglM242MFRZPn8tw==}
     peerDependencies:
-      react: ^16.8.0
+      '@types/react': '>=16.8.0 <17.0.0'
+      '@types/react-dom': '>=16.8.0 <17.0.0'
+      react: '>=16.8.0 <17.0.0'
+      react-dom: '>=16.8.0 <17.0.0'
     dependencies:
-      '@babel/runtime': 7.14.0
+      '@types/react': 17.0.6
+      '@types/scheduler': 0.16.1
+      scheduler: 0.20.2
+      tslib: 1.14.1
     dev: false
 
-  /@fluentui/react-context-selector/0.51.7_react@17.0.2:
-    resolution: {integrity: sha512-WLadFGSg9RHjlKGFK2WCV7eqKwZYOEOr6WHPmCTE8fBjDUbabsHU4U9J4OePPCIq/hSr0/8EfNPIjHqzXwofrg==}
+  /@fluentui/react-context-selector/0.53.4_e5a9f4ccd68a53a6796db59f6638bc49:
+    resolution: {integrity: sha512-gTZsDlwd256Vbk39HIfay1p1D6buAFecdE/tH5DXEJX3oobiGcCQ0f2/9UedX8kPLLsQQUWglM242MFRZPn8tw==}
     peerDependencies:
-      react: ^16.8.0
+      '@types/react': '>=16.8.0 <17.0.0'
+      '@types/react-dom': '>=16.8.0 <17.0.0'
+      react: '>=16.8.0 <17.0.0'
+      react-dom: '>=16.8.0 <17.0.0'
     dependencies:
-      '@babel/runtime': 7.14.0
+      '@types/react': 17.0.6
+      '@types/react-dom': 17.0.5
+      '@types/scheduler': 0.16.1
       react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      scheduler: 0.20.2
+      tslib: 1.14.1
     dev: false
 
   /@hapi/address/2.1.4:
@@ -2201,24 +2217,10 @@ packages:
     resolution: {integrity: sha512-ewFXqrQHlFsgc09MK5jP5iR7vumV/BYayNC6PgJO2LPe8vrnNFyjQjSppfEngITi0qvfKtzFvgKymGheFM9UOA==}
     dev: false
 
-  /@types/react-dom/16.9.13:
-    resolution: {integrity: sha512-34Hr3XnmUSJbUVDxIw/e7dhQn2BJZhJmlAaPyPwfTQyuVS9mV/CeyghFcXyvkJXxI7notQJz8mF8FeCVvloJrA==}
-    dependencies:
-      '@types/react': 16.14.6
-    dev: false
-
   /@types/react-dom/17.0.5:
     resolution: {integrity: sha512-ikqukEhH4H9gr4iJCmQVNzTB307kROe3XFfHAOTxOXPOw7lAoEXnM5KWTkzeANGL5Ce6ABfiMl/zJBYNi7ObmQ==}
     dependencies:
       '@types/react': 17.0.6
-    dev: false
-
-  /@types/react/16.14.6:
-    resolution: {integrity: sha512-Ol/aFKune+P0FSFKIgf+XbhGzYGyz0p7g5befSt4rmbzfGLaZR0q7jPew9k7d3bvrcuaL8dPy9Oz3XGZmf9n+w==}
-    dependencies:
-      '@types/prop-types': 15.7.3
-      '@types/scheduler': 0.16.1
-      csstype: 3.0.8
     dev: false
 
   /@types/react/17.0.6:
@@ -3124,7 +3126,7 @@ packages:
       '@babel/types': 7.14.2
       eslint: 7.26.0
       eslint-visitor-keys: 1.3.0
-      resolve: 1.18.1
+      resolve: 1.20.0
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -3203,7 +3205,7 @@ packages:
   /babel-plugin-macros/2.8.0:
     resolution: {integrity: sha512-SEP5kJpfGYqYKpBrj5XU3ahw5p5GOHJ0U5ssOSQ/WBVdwkD2Dzlce95exQTs3jOVWPPKLBN2rlEWkCK7dSmLvg==}
     dependencies:
-      '@babel/runtime': 7.12.1
+      '@babel/runtime': 7.14.0
       cosmiconfig: 6.0.0
       resolve: 1.20.0
     dev: false
@@ -5764,7 +5766,7 @@ packages:
     resolution: {integrity: sha512-DUxuQaKoqfNne8iikd14SAkh5uw4+8vNifp6gmA73yYNS6ywLIWSLD/n/mBzHQRpW3J7rbATEakmiA8JvkTyZw==}
     engines: {node: '>=6.11.5', yarn: '>=1.0.0'}
     dependencies:
-      '@babel/code-frame': 7.10.4
+      '@babel/code-frame': 7.12.13
       chalk: 2.4.2
       micromatch: 3.1.10
       minimatch: 3.0.4
@@ -10306,7 +10308,7 @@ packages:
   /regenerator-transform/0.14.5:
     resolution: {integrity: sha512-eOf6vka5IO151Jfsw2NO9WpGX58W6wWmefK3I1zEGr0lOD0u8rwPaNqQL1aRxUaxLeKO3ArNh3VYg1KbaD+FFw==}
     dependencies:
-      '@babel/runtime': 7.12.1
+      '@babel/runtime': 7.14.0
     dev: false
 
   /regex-not/1.0.2:
@@ -12766,12 +12768,12 @@ packages:
     dev: false
 
   file:projects/20200913.react-context.tgz_ts-node@9.1.1:
-    resolution: {integrity: sha512-42WcVD5YzCtYfPbNRkeHEKOK/kQ34dEoirTwoEhtyLQLP6yVr1e4YtqK9MLrbCv3ipE7OrNFETQXO8uq9lBGNg==, tarball: file:projects/20200913.react-context.tgz}
+    resolution: {integrity: sha512-Y9dU4HZKaQ8umYDY4A+0ckPWDSUULcE4VfdiwNqf83VR0xkLU9ucb94nX9pClEDOzDkEu1zHpU28Ts9O41v9TQ==, tarball: file:projects/20200913.react-context.tgz}
     id: file:projects/20200913.react-context.tgz
     name: '@rush-temp/20200913.react-context'
     version: 0.0.0
     dependencies:
-      '@fluentui/react-context-selector': 0.51.7_react@17.0.2
+      '@fluentui/react-context-selector': 0.53.4_e5a9f4ccd68a53a6796db59f6638bc49
       '@types/react': 17.0.6
       '@types/react-dom': 17.0.5
       react: 17.0.2
@@ -12799,7 +12801,7 @@ packages:
     dev: false
 
   file:projects/20201029.server-side-render.tgz:
-    resolution: {integrity: sha512-lfW14uurpDqtfLXZUfei4FeJHJ7pVuctxZAe8xxWjn9q/374k76dAmW5fNAQrA86B5pCweVirqyeiUVgFV+7Hw==, tarball: file:projects/20201029.server-side-render.tgz}
+    resolution: {integrity: sha512-Vi6nVbYxvX4OcvFDznUTBWFfc6FY+QX6cU6Cx7F/wPmz+TNWzgJG6uNYY6hF9EQ/RUC3PF/BSJZcka4s3G5Rsw==, tarball: file:projects/20201029.server-side-render.tgz}
     name: '@rush-temp/20201029.server-side-render'
     version: 0.0.0
     dependencies:
@@ -12808,8 +12810,8 @@ packages:
       '@rollup/plugin-replace': 2.4.2_rollup@2.48.0
       '@rollup/plugin-typescript': 6.1.0_0969daa3475b3be6a148ff4d6fc45800
       '@types/express': 4.17.11
-      '@types/react': 16.14.6
-      '@types/react-dom': 16.9.13
+      '@types/react': 17.0.6
+      '@types/react-dom': 17.0.5
       express: 4.17.1
       nodemon: 2.0.7
       react: 17.0.2
@@ -12821,7 +12823,7 @@ packages:
     dev: false
 
   file:projects/cra-template-jiandan.tgz_ts-node@9.1.1:
-    resolution: {integrity: sha512-MG07amYWf6n+s4MjwIl0G6i/n9IQgw2/nqpyRmZ1ORVaI/EvUg8wBXmZ75iPRXroa0aKYKp+vSWSGUIajnkdnA==, tarball: file:projects/cra-template-jiandan.tgz}
+    resolution: {integrity: sha512-sCAjfrH9SIqySIj2mMqo1T8+PQGieZu2VD0yBjrheTDVn2un64SA7LOWUnAajFegnhLfoSdJUQzbHOnHTw0bng==, tarball: file:projects/cra-template-jiandan.tgz}
     id: file:projects/cra-template-jiandan.tgz
     name: '@rush-temp/cra-template-jiandan'
     version: 0.0.0

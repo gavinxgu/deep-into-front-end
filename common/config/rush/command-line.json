@@ -176,6 +176,13 @@
 
       // This will invoke common/autoinstallers/rush-prettier/node_modules/.bin/pretty-quick
       "shellCommand": "pretty-quick --staged"
+    },
+    {
+      "commandKind": "bulk",
+      "name": "fix",
+      "summary": "自动修正代码",
+      "description": "批量运行 lint --fix 或 prettier --write 自动修正代码",
+      "enableParallelism": true
     }
   ],
 
