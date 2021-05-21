@@ -5,8 +5,9 @@
   "license": "MIT",
   "scripts": {
     "build:client": "ts-node-script config/build.ts",
-    "start:client": "yarn build:client -w",
-    "start:server": "nodemon"
+    "start:client": "pnpm build:client -w",
+    "start:server": "nodemon",
+    "build": "pnpm build:client"
   },
   "dependencies": {
     "express": "^4.17.1",

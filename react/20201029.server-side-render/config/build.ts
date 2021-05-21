@@ -22,6 +22,7 @@ async function build({
     plugins: [
       replace({
         "process.env.NODE_ENV": JSON.stringify("production"),
+        preventAssignment: true,
       }),
       nodeResolve({
         browser: true,
